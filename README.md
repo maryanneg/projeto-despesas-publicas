@@ -2,7 +2,7 @@
 
 # Projeto de Análise de Despesas Públicas - 2024
 
-Este projeto faz parte da disciplina de TÓPICOS DE BIG DATA EM PYTHON tem como objetivo baixar, extrair e analisar dados de despesas públicas do Portal da Transparência do governo federal brasileiro para o ano de 2024. A análise inclui total de gastos, distribuição mensal, gastos por órgãos superiores e análise regional por Unidade da Federação (UF). Além disso, disponibiliza uma dashboard em Excel ainda mais completa para facilitar a visualização e exploração dos dados.
+Este projeto faz parte da disciplina de TÓPICOS DE BIG DATA EM PYTHON tem como objetivo baixar, extrair e analisar dados de despesas públicas do Portal da Transparência do governo federal brasileiro para o ano de 2024. A análise inclui total de gastos, distribuição mensal, gastos por órgãos superiores e análise regional por Unidade da Federação (UF) com a dashboard em Excel completa para facilitar a visualização e exploração dos dados.
 
 
 ## Funcionalidades
@@ -10,22 +10,13 @@ Este projeto faz parte da disciplina de TÓPICOS DE BIG DATA EM PYTHON tem como 
 - Download automático dos arquivos zip com dados mensais de despesas públicas.
 - Extração e armazenamento dos dados em formato CSV.
 - Análise consolidada dos dados com:
-  - Total geral de despesas.
-  - Despesas por mês.
-  - Top 10 órgãos superiores que mais gastaram.
-  - Boxplot de despesas por Unidade da Federação (UF).
 - Dashboard em Excel para visualização interativa dos dados.
-- Interface interativa com botões para download e análise usando `ipywidgets`.
-
 
 
 ## Estrutura do Projeto
 
+-`python - captando dados` -  Pasta com script em python que capta dados do portal da transparência 
 - `dados_despesa/` — Pasta onde os arquivos CSV extraídos são salvos.
-- Notebook Jupyter com blocos separados para:
-  - Configuração e download dos dados.
-  - Análise dos dados.
-  - Visualizações gráficas.
 - Arquivo `dashboard_despesas.xlsx` — Dashboard em Excel com gráficos e tabelas dinâmicas.
 
 ---
@@ -33,7 +24,7 @@ Este projeto faz parte da disciplina de TÓPICOS DE BIG DATA EM PYTHON tem como 
 ## Como usar
 
 1. Execute o bloco de código para baixar e extrair os arquivos, selecionando o ano (ex: 2024) e mês (ou todos).
-2. Após o download, execute o bloco de análise para visualizar os totais, gráficos e boxplots.
+2. Após o download
 3. Abra o arquivo Excel `dashboard_despesas.xlsx` para uma análise interativa adicional.
 
 
@@ -47,9 +38,8 @@ Este projeto faz parte da disciplina de TÓPICOS DE BIG DATA EM PYTHON tem como 
 - Bibliotecas Python:
   - `pandas`
   - `matplotlib`
-  - `ipywidgets`
   - `requests`
-- Jupyter Notebook ou JupyterLab
+  -` zipfile`
 - Microsoft Excel (ou software compatível) para a dashboard
 
 Para instalar as bibliotecas necessárias, execute:
